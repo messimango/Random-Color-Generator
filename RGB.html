@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./RGB.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Random Color Generator</title>
+</head>
+<body>
+    <header>
+    <div class="header">
+        <h1 class="title">RGB Slider</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./RCG.html">Random Color Generator</a></li>
+                <li><a href="./RGB.html" class="current">RGB Slider</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main class="main">
+      
+        <div class="top">
+            <div class="slider">
+                <dl class="sliderList">
+                    <dt>
+                        <input id="r-slider" class="input-range" orient="vertical" type="range" step="1" value="" min="0" max="255">
+                        <h3>R :<span id="R-value"></span></h3>
+                    </dt>
+                    
+                    <dt>
+                        <input id="g-slider" class="input-range" orient="vertical" type="range" step="1" value="" min="0" max="255">
+                        <h3>G : <span id="G-value"></span></h3>
+                    </dt>
+                    
+                    <dt>
+                        <input id="b-slider" class="input-range" orient="vertical" type="range" step="1" value="" min="0" max="255">
+                        <h3>B : <span id="B-value"></span></h3>
+                    </dt>
+                </dl>            
+            </div>
+
+            <div class="color" ></div>
+
+        </div>
+
+
+        <div class="values">
+            <div class="hex-value">
+                <h1 class="hex">Hex : </h1>
+                <div class="hexdiv">
+                    <h2 class="hexValue">#808080</h2>
+                </div>
+                <button class="copy" onclick="copyHEX()"><i class="fa-solid fa-copy"></i></button>
+                  
+            </div>
+    
+            <div class="RGB-value">
+                <h1>RGB : </h1>
+                <div class="rgbdiv">
+                    <h2 class="rgbValue">rgb(128,128,128)</h2>
+                </div>
+                
+                <button class="copy" onclick="copyRGB()"><i class="fa-solid fa-copy"></i></button>
+                     
+            </div>
+    
+            <div class="HSL-value">
+                <h1>HSL : </h1>
+                <div class="hsldiv">
+                    <h2 class="hslValue">hsl(0,0%,50%)</h2>
+                </div>
+
+                <button class="copy" onclick="copyHSL()"><i class="fa-solid fa-copy"></i></button>
+                                
+            </div>
+        </div>
+        <input type="text" value="rgb(128,128,128)" id="rgbInput" hidden>
+        <input type="text" value="#808080" id="hexInput" hidden> 
+        <input type="text" value="hsl(0,0%,50%)" id="hslInput" hidden>  
+    </main>
+
+</body>
+
+<script src="./RGB.js"></script>
+</html>

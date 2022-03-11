@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./RCG.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Random Color Generator</title>
+</head>
+<body>
+    <header>
+    <div class="header">
+        <h1 class="title">Random Color Generator</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./RCG.html" class="current">Random Color Generator</a></li>
+                <li><a href="./RGB.html">RGB Slider</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 class="show-color">Background Color : <br/> <span class="color">#F5f5f5</span> </h2>
+            <div id="buttons">
+                <button class="color-button">Randomize Color</button>
+                <button class="copy" onclick="copyColor()"><i class="fa-solid fa-copy"></i></button>
+            </div>
+            <input type="text" value="" id="colorInput">
+        </div>
+    </main>
+
+</body>
+
+<script src="./RCG.js"></script>
+</html>
